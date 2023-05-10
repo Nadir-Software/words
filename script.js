@@ -31,7 +31,12 @@ async function getEnglishWords() {
 
 async function generateRandomWord() {
     const englishWords = await getEnglishWords();
-    const randomWord = englishWords[getRandomNumber(englishWords.length)];
+    var randomWord = "DUMMY TEXT";
+    
+    while (!/^[a-z]+$/.test(randomWord)) {
+        randomWord = englishWords[getRandomNumber(englishWords.length)];
+    }
+
     word.innerHTML = randomWord;
     container.style.background = getRandomGradient();
 }
