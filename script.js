@@ -5,7 +5,6 @@ function getRandomNumber(max) {
     return Math.floor(Math.random() * max);
 }
 
-
 function getRandomGradient() {
     const gradients = [
         'linear-gradient(to right, #ff416c, #ff4b2b)',

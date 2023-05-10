@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    transition: 1s ease;
 }
 
 body {
@@ -23,6 +25,12 @@ body {
     width: 600px;
     border-radius: 15px;
     background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.container:hover {
+    cursor: pointer;
+
+    filter: hue-rotate(180deg);
 }
 
 .word {
